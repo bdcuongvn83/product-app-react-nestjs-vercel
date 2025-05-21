@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 100px auto auto 100px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+        height: 100vh;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      .header {
+        grid-column: 1 / -1;
+      }
+      .navcontain {
+        grid-column: 1 / -1;
+      }
+      .content-left {
+        grid-row: 3;
+        grid-column: 1;
+        background-color: #f8d7da;
+      }
+      .content-right {
+        grid-row: 3;
+        grid-column: 4;
+        background-color: #cce5ff;
+      }
+      .footer {
+        grid-column: 1 / -1;
+      }
+      .content {
+        grid-row: 3;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The grid-template-rows Property</h1>
+
+    <p>
+      Use the <em>grid-template-rows</em> property to define the size of the
+      rows in a grid layout.
+    </p>
+    <p>
+      The first row in this grid is 100px high, and the second row is 300px
+      high:
+    </p>
+
+    <div class="grid-container">
+      <div class="header">1</div>
+      <div class="navcontain">2</div>
+      <div class="content-left">3</div>
+      <div class="content">4</div>
+
+      <div class="content-right">8</div>
+      <div class="footer">9</div>
+    </div>
+  </body>
+</html>
