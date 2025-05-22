@@ -206,7 +206,10 @@ function App() {
 
               <div className="title">Shopping online C-Mart</div>
               <div className="right-group">
-                <div className="item">
+                <div
+                  className="item"
+                  style={{ position: "relative", display: "inline-block" }}
+                >
                   <Link to="/Users/ProductItemBag">
                     {/* SVG Icon Cart */}
                     <svg
@@ -234,6 +237,8 @@ function App() {
                           padding: "4px 8px",
                           fontSize: "11px",
                           fontWeight: "bold",
+                          position: "absolute",
+                          top: "-6px",
                         }}
                       >
                         {countCart}
