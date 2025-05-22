@@ -431,6 +431,7 @@
   grid-template-rows: auto 1fr auto;
   grid-gap: 10px;
   height: 100vh;
+  overflow-y: hidden;
 }
 .main-header {
   grid-row: 1;
