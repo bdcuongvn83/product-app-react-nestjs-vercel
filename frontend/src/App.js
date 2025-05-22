@@ -208,7 +208,23 @@ function App() {
               <div className="right-group">
                 <div className="item">
                   <Link to="/Users/ProductItemBag">
-                    Cart
+                    {/* SVG Icon Cart */}
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Cart"
+                      aria-description="Cart"
+                    >
+                      <title>Cart</title>
+                      <path
+                        d="M4 16.006v-12H2v-2h3a1 1 0 0 1 1 1v12h12.438l2-8H8v-2h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1Zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
+                        fill="#333"
+                      ></path>
+                    </svg>
                     {countCart > 0 ? (
                       <span
                         style={{
